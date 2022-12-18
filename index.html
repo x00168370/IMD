@@ -6,8 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/cv.css">
 
 
@@ -15,96 +20,371 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <header>
+
+        <!-- Navbar -->
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
             <ul class="nav nav-pills">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
 
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="experience.html">Experience and Hobbies</a>
+                    <a class="nav-link" href="#experience">Experience and Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies and Skills</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Grades</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#grades">Grades</a>
+
                     <ul class="dropdown-menu">
-
-                        <li><a class="dropdown-item" href="#">First Year</a></li>
-                        <li><a class="dropdown-item" href="#">Second Year</a></li>
-                        <li><a class="dropdown-item" href="#">Third Year</a></li>
-
+                        <li><a class="dropdown-item" href="#firstyear">First Year</a></li>
+                        <li><a class="dropdown-item" href="#secondyear">Second Year</a></li>
+                        <li><a class="dropdown-item" href="#thirdyear">Third Year</a></li>
                     </ul>
-
+                </li>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
 
-        <div class="container pt-4  mt-5">
-            <h4 class="test-center">Oluwatosin Sojnrin</h4>
+        <!-- About Me Container -->
 
-            <img src="images/tosin.jpeg">
+        <div id="home" class="container pt-5 mt-5">
 
-            <p>4th Year student at Technological University Dublin.</p>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="images/tosin.jpeg" />
+                </div>
+
+                <div class="col-md-8 mt-5">
+                    <h4>Oluwatosin Sojinrin</h4>
+                    <h5>4th Year student at Technological University Dublin, Tallaght Campus</h5>
+                    <h5>Computing - Software Development with Language (German)</h5>
 
 
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact
-                Me!</button>
+                    <button type="button" class="btn  btn-lg" data-toggle="modal" data-target="#myModal">Contact
+                        Me!</button>
 
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
 
 
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">hi</h4>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">hi</h4>
+
+                                </div>
+
+                                <div class="modal-body">
+                                    <p>why not work.</p>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
 
                         </div>
-
-                        <div class="modal-body">
-                            <p>why not work.</p>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-
                     </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Profile Card Details -->
+
+        <div id="home" class="card mt-5">
+
+            <div class="card-body mt-5 pb-5">
+
+                <h5>My Profile</h5>
+
+                <p>I am a highly motivated individual with a positive attitude and willingness to work. Experienced in
+                    the retail sector, providing high quality personal service and support to customers. Strong
+                    communication skills to provide the best customer experience with great knowledge of apple products
+                    and operating systems such as iPhone, Mac, iPad, macOS and iOS, in order to troubleshoot and solve
+                    customer’s issues. As an avid Apple user, I have gained experience and knowledge of the company’s
+                    product portfolio to ensure all customer queries are handled professionally.</p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Experience, Skills and Hobbies -->
+
+        <div id="experience" class="container mt-5 ">
+
+            <div class="card-body mt-5 pb-5">
+
+                <h2>Education</h2>
+
+                <p>Write about education here</p>
+
+            </div>
+
+            <div class="container mt-5 pb-5">
+
+                <h2>Work Experience</h2>
+
+
+                <h5> October 2019- March 2020 The Perfume Shop Sales Assistant </h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#perfume">More
+                    Information</button>
+                <div id="perfume" class="collapses">
+                    <p>• Answering calls, emails, and processing of online orders.</p>
+                    <p>• Resolving customers problems and concerns whilst maintaining exceptional customer experience in
+                        a
+                        timely manner.</p>
+                    <p>• Delivered customer services through recommendation of products and sales/ special promotions.
+                    </p>
+                    <p>• Handling customer queries patiently and efficiently, whilst dealing with complaints.</p>
+                    <p>• Handling and processing of cash/ card payments and other transactions.</p>
+                </div>
+
+                <h5> January 2019 - September 2019 St. Vincent de Paul Shop Assistant </h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="svp">More
+                    Information</button>
+                <div id="svp" class="collapses">
+
+                    <p>• Handling customer queries face to face and on the phone.</p>
+                    <p>• Management and recording of stock.</p>
+                    <p>• Helping customers make purchasing decisions by offering suggestions</p>
+                    <p>• Handling cash payments and other till transaction services</p>
+                    <p>• Cleaning and general upkeep of the store</p>
+                </div>
+
+
+                <h5> May 2021- September 2022 Zara Sales Assistant </h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#zara">More
+                    Information</button>
+                <div id="zara" class="collapses">
+
+                    <p>• Ensuring an exceedingly high level of customer service</p>
+                    <p>• Ensuring company guidelines on retail and security procedures were followed.</p>
+                    <p>• Having specialist knowledge of the company’s products and merchandise</p>
+                    <p>• Ensuring the visual standards of the store met the company’s high standards</p>
+                    <p>• Training of new employees in mens and children departments</p>
 
                 </div>
+
             </div>
         </div>
 
 
-        <div class="card mt-5">
 
+        <!-- Skills and Hobbies -->
 
+        <div id="hobbies" class="card mt-5 ">
 
             <div class="card-body mt-5 pb-5">
 
-                <h4>My Profile</h4>
+                <h4>Hobbies</h4>
 
-                <p>I am a highly motivated individual with a positive attitude and willingness to work.
-                    Experienced in the retail sector, providing high quality personal service and support to customers.
-                    Strong communication skills to provide the best customer experience with great knowledge of apple
-                    products and operating systems such as iPhone, Mac, iPad, macOS and iOS, in order to troubleshoot
-                    and solve customer’s issues.
-                    As an avid Apple user, I have gained experience and knowledge of the company’s product portfolio to
-                    ensure all customer queries are handled professionally.</p>
+                <p>Write about Hobbies here</p>
 
             </div>
 
+            <div class="card-body mt-5 pb-5">
+
+                <h4>Skills</h4>
+
+                <p>Write about skills here</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Grades -->
+
+        <div id="#" class="container mt-5 pt-5">
+
+            <h4>1st Year</h4>
+
+            <div id="firstyear">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>First Semester</th>
+                            <th>Grade</th>
+                            <th>Second Semester</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sdev</td>
+                            <td>Grade</td>
+                            <td>Sdev</td>
+                            <td>Grade</td>
+
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+
+            <div id="secondyear">
+                <h4>Second Year</h4>
+
+                <table class="table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th>First Semester</th>
+                            <th>Grade</th>
+                            <th>Second Semester</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div id="thirdyear">
+                <h4>Third Year</h4>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>First Semester</th>
+                            <th>Grade</th>
+                            <th>Second Semester</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>D</td>
+                        </tr>
+                        <tr>
+                            <td>Sdev</td>
+                            <td>Grade</td>
+                            <td>Sdev</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                        <tr>
+                            <td>Class</td>
+                            <td>Grade</td>
+                            <td>Class</td>
+                            <td>Grade</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
 
         </div>
 
@@ -112,7 +392,17 @@
 
     <footer>
 
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#home">1</a></li>
+            <li class="page-item"><a class="page-link" href="#experience">2</a></li>
+            <li class="page-item"><a class="page-link" href="#hobbies">3</a></li>
+            <li class="page-item"><a class="page-link" href="#grades">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+
     </footer>
+
 
 </body>
 
@@ -123,20 +413,16 @@
 
 
 
-<!-- •	A hero component at the top of the page should 
-    include a photo and details such as your name & discipline etc.            
+<!--          
 
-•	Include education details and module grades.
+
 
 •	Include any 2nd, 3rd & 4th year project details.
 
-•	Include work placement details where appropriate
 
 •	A section on the type of work or project that you are interested in
 
-•	One section on your hobbies/interests at the end of the page is best.
 
-•	A button which opens a modal dialog with 
-    contact information for you. You can also provide a more 
-    detailed contact section too.
+
+
  -->
